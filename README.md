@@ -2,8 +2,8 @@
 <h2>With UI and Interactive Features.</h2>
 
 <h3>About the Game</h3>
-The game is programmed to make the user select a character of their choice and play against the computer. A winner will be decleared and the game will and after either the user or the computer have reach 5 points.<br>
-A screen result will appear with the final score and the user will be given a choice to play again.
+The game is programmed to let the user select a character of their choice and play against the computer. A winner will be decleared and the game will end after either, the user or the computer have reach a score of 5 points.<br>
+A result screen will appear with the final score and the user will be given a choice to play again.
 <br>
 
 <h3>How to Play</h3>
