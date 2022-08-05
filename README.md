@@ -4,7 +4,7 @@
 <h3>About The Game</h3>
 The game is programmed to make the user select a character of their choice and play against the computer. A winner will be decleared and the game will and after either the user or the computer have reach 5 points.<br>
 A screen result will appear with the final score and the user will be given a choice to play again.
-<br><br>
+<br>
 
 <h3>How to play</h3>
 <ul>
