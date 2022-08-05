@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- S T A R T - S C R E E N -->
+    <div id="start-screen">
+        <!-- Rules -->
+        <div class="rules-container">
+            <h1>Welcome to <br> Rock, Paper or Scissors? The Game!</h1>
+            <div class="rules">
+                <h3>How to play</h3>
+                <ul class="rules-list">
+                    <li>Choose your character</li>
+                    <li>Select one of the three buttons (Rock, Paper, Scissors)</li>
+                    <li>Computer will make his choice</li>
+                    <li>First to reach 5 points wins</li>
+                    <li>Have fun!</li>
+                </ul>
+            </div>
+            <button class="next-button game-button">Next <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Characters -->
+        <div id="character-screen">
+            <header>
+                <h2>Choose your character</h2>
+                <p class="invalid-choice">You have to choose a player. Choose your character &#9888;&#65039;</p>
+            </header>
+            <div class="characters-container">    
+                <div class="male characters">
+                    <button class="character-emoji" data-tone="boy-light">&#128102;&#127996;</button>
+                    <button class="character-emoji" data-tone="boy-light-medium">&#128102;&#127995;</button>
+                    <button class="character-emoji" data-tone="boy-medium-dark">&#128102;&#127997;</button>
+                    <button class="character-emoji" data-tone="boy-dark">&#128102;&#127999;</button>
+                </div>
+                <div class="female characters">
+                    <button class="character-emoji" data-tone="girl-light">&#128105;&#127996;</button>
+                    <button class="character-emoji" data-tone="girl-light-medium">&#128105;&#127995;</button>
+                    <button class="character-emoji" data-tone="girl-medium-dark">&#128105;&#127997;</button>
+                    <button class="character-emoji" data-tone="girl-dark">&#128105;&#127999;</button>
+                </div>
+            </div>
+            <button class="start-button game-button">Get Started!</button>
+        </div>
+    </div>
+
+    <!-- G A M E - S T A R T S - H E R E -->
+    <main id="game-container">
+        <!-- Game Screen -->
+        <div class="game-screen">
+            <div class="game-display">
+                <!-- Player -->
+                <div id="player-screen">
+                    <p id="player"><span class="player-emoji"></span> Player: <span id="player-score">0</span></p>
+                    <div id="player-choice-container">
+                       <img src="" alt="" id="player-choice">
+                    </div>
+                </div>
+                <figure class="round-container">
+                    <img src="./assets/images/vs-2.png" alt="Versus" class="vs-img">
+                </figure>
+                <!-- Computer -->
+                <div id="computer-screen">
+                    <p id="computer"><span class="computer-emoji">&#129302;</span> Computer: <span id="computer-score">0</span></p>
+                    <div id="computer-choice-container">
+                        <img src="" alt="" id="computer-choice">
+                        <div class="computer-loading" class="dot-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player Buttons-->
+        <div class="game-choices">
+            <h2>Rock, Paper or Scissors?</h2>
+            <p>Make Your Choice!</p>
+            <div class="button-container">
+                <button id="rock-button" class="player-button">
+                    <img src="./assets/images/stone.png" alt="" id="rock" class="player-choice" data-type="rock">
+                </button>
+                <button id="paper-button" class="player-button">
+                    <img src="./assets/images/toilet-paper.png" alt="" id="paper" class="player-choice" data-type="paper">
+                </button>
+                <button id="scissors-button" class="player-button">
+                    <img src="./assets/images/scissors.png" alt="" id="scissors" class="player-choice" data-type="scissors">
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- R E S U L T S - S C R E E N -->
+    <div id="result-screen">
+        <div class="result-container">
+            <p class="result"></p>
+            <div class="result-tab">
+                <h3>Game Results</h3>
+                <p class="name"><span class="player-score score"></span></p>
+                <p class="name"><span class="computer-score score"></span></p>
+            </div>
+            <button class="reset-button game-button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/scripts/app.js"></script>
+    <script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
+</body>
+</html>

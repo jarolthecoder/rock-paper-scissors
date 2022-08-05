@@ -1,0 +1,110 @@
+@media screen and (max-width: 600px) {
+    h1 {font-size: 1.5rem;}
+
+    h2 {font-size: 1.3rem;}
+
+    h3,
+    .player-score,
+    .computer-score ,
+    .game-button 
+    {font-size: 1.1rem;}
+
+    .character-emoji, 
+    .result 
+    {font-size: 1.7rem;}
+
+    .fa-chevron-right {font-size: 0.9rem;}
+
+    #game-container,
+    .game-screen,
+    .score-container,
+    .score-display,
+    .game-display {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .rules-container,
+    #character-screen,
+    #result-screen,
+    .result-container {
+        width: 100%;
+        padding: 1em;
+    }
+
+    #game-container {
+        gap: 0;
+        padding: 0;
+    }
+
+    #player-screen {margin-bottom: 1em;}
+    #computer {padding: 0 0 1em 0;}
+
+    #player-choice-container, 
+    #computer-choice-container {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        padding: 1em;
+    }
+
+    .game-choices p {
+        padding: 0.2em 0;
+        font-size: 1.2rem;
+    }
+
+    .button-container {
+        gap: 0;
+        padding: 2em 1em;
+    }
+
+    .player-button {
+        width: 20%;
+        margin: auto;
+        padding: 1.2em;
+        border: solid 2px;
+    }
+
+    .button-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .vs-img {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+    h2 {font-size: 1.7rem;}
+    
+    #game-container {
+        padding: 1em 2em;
+        width: 100%;
+    }
+
+    #player-choice-container, 
+    #computer-choice-container {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        padding: 1em;
+    }
+
+    .player-button {
+        width: 100px;
+        margin: auto;
+        padding: 1.2em;
+        border: solid 2px;
+    }
+
+    .rules-container,
+    #character-screen,
+    .result-container {
+        width: 80%;
+        padding: 2em;
+    }
+}
