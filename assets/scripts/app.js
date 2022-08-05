@@ -53,7 +53,6 @@ characterButton.forEach(c => {c.addEventListener('click', (p)=> {
             playerEmoji.dataset.type = 'player-active';
             break;
     }
-
 })});
 
 const nextButton = document.querySelector('.next-button');
@@ -74,7 +73,6 @@ startButton.addEventListener('click', ()=> {
         invalidChoice.style.display = 'block';
     }
 });
-
 
 //G A M E - S T A R T S -------------------------------------------------------------------------------------------------->
 // Player Hand
@@ -112,18 +110,18 @@ function computerHand() {
 
     } else if (computerOptions === paper) {
         computerChoice.src = paper.src;
-        computerChoice.dataset.type = 'paper'
+        computerChoice.dataset.type = 'paper';
 
     } else if (computerOptions === scissors) {
         computerChoice.src = scissors.src;
-        computerChoice.dataset.type = 'scissors'
+        computerChoice.dataset.type = 'scissors';
     }
     return computerChoice;
 }
 
 // Game
+let result = document.querySelector('.game-choices h2');
 function playRound(playerSelection, computerSelection) {
-    let result = document.querySelector('.game-choices h2');
     const winnerSound = new Audio('./assets/audio/winner.mp3');
     const loserSound = new Audio('./assets/audio/loser.mp3');
     const drawSound = new Audio('./assets/audio/draw.mp3');
@@ -209,7 +207,7 @@ function playRound(playerSelection, computerSelection) {
 
 // Ends game and start new round
 const resultScreen = document.querySelector('#result-screen');
-const result = document.querySelector('.result');
+const gameResult = document.querySelector('.result');
 const playerFinalScore = document.querySelector('.player-score');
 const computerFinalScore = document.querySelector('.computer-score');
 const resetButton = document.querySelector('.reset-button');
@@ -219,14 +217,13 @@ function endGame() {
     const gameLoser = new Audio('./assets/audio/game-loser.mp3');
     if(playerScore === 5 || computerScore === 5) {
         resultScreen.classList.add('result-active');
-    
         if(playerScore > computerScore) {
-            result.textContent = 'Congratulations! You are the Winner. 🏆';
+            gameResult.textContent = 'Congratulations! You are the Winner. 🏆';
             setTimeout(()=> {
                 gameWinner.play();
             }, 2000);
         } else {
-            result.textContent = 'You Lose! Computer Wins. 😒';
+            gameResult.textContent = 'You Lose! Computer Wins. 😒';
             setTimeout(()=> {
                 gameLoser.play();
             }, 2000);
@@ -235,7 +232,6 @@ function endGame() {
         computerFinalScore.textContent = `${computerEmoji.innerHTML}  Computer Score: ${computerScore}`;
     }
 };
-
 endGame();
 
 resetButton.addEventListener('click', ()=> {
@@ -245,6 +241,7 @@ resetButton.addEventListener('click', ()=> {
     computerScoreDisplay.textContent = 0;
     playerChoice.src = '';
     computerChoice.src = '';
+    result.textContent = 'Rock, Paper or Scissors?';
     playerEmoji.classList.remove('winner');
     computerEmoji.classList.remove('winner');
     resultScreen.classList.remove('result-active');
