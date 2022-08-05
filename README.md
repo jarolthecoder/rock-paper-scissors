@@ -1,12 +1,12 @@
-<h1>Rock Paper Scissors The Game</h1>
-<h2>With UI and interactive features.</h2>
+<h1>Rock Paper Scissors - The Game</h1>
+<h2>With UI and Interactive Features.</h2>
 
-<h3>About The Game</h3>
+<h3>About the Game</h3>
 The game is programmed to make the user select a character of their choice and play against the computer. A winner will be decleared and the game will and after either the user or the computer have reach 5 points.<br>
 A screen result will appear with the final score and the user will be given a choice to play again.
 <br>
 
-<h3>How to play</h3>
+<h3>How to Play</h3>
 <ul>
   <li>Choose your character</li>
   <li>Select one of the three buttons (Rock, Paper, Scissors)</li>
