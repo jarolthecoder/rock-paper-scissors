@@ -37,6 +37,10 @@
         padding: 0;
     }
 
+    .game-display {
+        padding: 1em 0;
+    }
+
     #player-screen {margin-bottom: 1em;}
     #computer {padding: 0 0 1em 0;}
 
@@ -47,6 +51,11 @@
         margin: auto;
         padding: 1em;
     }
+
+    .winner {
+        animation: shake 0.5s;
+        transform: scale(1.2);
+        display: inline-block;}
 
     .game-choices p {
         padding: 0.2em 0;
