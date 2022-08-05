@@ -21,27 +21,27 @@ characterButton.forEach(c => {c.addEventListener('click', (p)=> {
     const playerType = character.dataset.tone;
     switch(playerType) {
         case 'boy-light':
-            playerEmoji.textContent = '👦🏼';
+            playerEmoji.textContent = '🧑🏻';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'boy-light-medium':
-            playerEmoji.textContent = '👦🏻';
+            playerEmoji.textContent = '🧑🏼';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'boy-medium-dark':
-            playerEmoji.textContent = '👦🏽';
+            playerEmoji.textContent = '🧑🏽';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'boy-dark':
-            playerEmoji.textContent = '👦🏿';
+            playerEmoji.textContent = '🧑🏿';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'girl-light':
-            playerEmoji.textContent = '👩🏼';
+            playerEmoji.textContent = '👩🏻';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'girl-light-medium':
-            playerEmoji.textContent = '👩🏻';
+            playerEmoji.textContent = '👩🏼';
             playerEmoji.dataset.type = 'player-active';
             break;
         case 'girl-medium-dark':
