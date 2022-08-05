@@ -15,6 +15,12 @@
 
     .fa-chevron-right {font-size: 0.9rem;}
 
+    #start-screen,
+    #result-screen.result-active {
+        justify-content: flex-start;
+        padding: 3em 1em;
+    }
+
     #game-container,
     .game-screen,
     .score-container,
