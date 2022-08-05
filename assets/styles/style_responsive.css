@@ -18,7 +18,7 @@
     #start-screen,
     #result-screen.result-active {
         justify-content: flex-start;
-        padding: 3em 1em;
+        padding: 5em 1em;
     }
 
     #game-container,
