@@ -42,8 +42,8 @@
 
     #player-choice-container, 
     #computer-choice-container {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         margin: auto;
         padding: 1em;
     }
